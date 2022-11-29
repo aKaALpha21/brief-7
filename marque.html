@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="marque.css">
     <script src="https://kit.fontawesome.com/2ff52a64bf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
     <title>MFU</title>
 </head>
 <body>
@@ -21,72 +24,74 @@
         <section class="section">
             <div>
                 <h3>Nom:</h3>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="Nom">
+                <p id="name"></p>
             </div>
             <div>
                 <h3>Marque</h3>
-                <select name="" id="">
+                <select name="" id="marque">
                     <option value=""></option>
                     <option value="Dior">Dior</option>
                     <option value="1 Million">1 Million</option>
                     <option value="Hugo Boss">Hugo Boss</option>
                     <option value="CkFree"> CkFree</option>
                 </select>
+                <p id="marquepara"></p>
             </div>
             <div>
                 <h3>Prix:</h3>
-                <input type="text">
+                <input type="text" id="prix">
+                <p id="price"></p> 
             </div>
             <div>
                 <h3>Date:</h3>
-                <input type="date" name="" id="">
+                <input type="date" name="" id="date">
+                <p id="paradate"></p>
             </div>
             <div>
                 <h3>Type:</h3>
-                <select name="" id="">
+                <select name="" id="type">
                     <option value=""></option>
-                    <option value="hygiène et toilette">hygiène et toilette</option>
-                    <option value="soins esthétiques">soins esthétiques</option>
-                    <option value="produits solaires">produits solaires</option>
-                    <option value="beauté des mains et des pieds">beauté des mains et des pieds</option>
-                    <option value="produits de maquillage">produits de maquillage</option>
-                    <option value="entretien capillaires">entretien capillaires</option>
-                    <option value="parfums">parfums</option>
+                    <option value="Hygiène et toilette">Hygiène et toilette</option>
+                    <option value="Soins esthétiques">Soins esthétiques</option>
+                    <option value="Produits solaires">Produits solaires</option>
+                    <option value="Beauté des mains et des pieds">Beauté des mains et des pieds</option>
+                    <option value="Roduits de maquillage">Rroduits de maquillage</option>
+                    <option value="Entretien capillaires">Entretien capillaires</option>
+                    <option value="Parfums">Parfums</option>
                 </select>
+                <p id="paratype"></p>
             </div>
             <div class="Promotion">
                 <h3>Promotion:</h3>
-                <input type="radio" name="radio"class="radio">
+                <input value="oui" type="radio" name="radio"id="oui">
                 <label for="radio">oui</label>
-                <input type="radio" name="radio"class="radio">
+                <input value="non" type="radio" name="radio"id="non">
                 <label for="radio">non</label>
+                <p id="promo"></p>
             </div>
         </section>
         <section class="section" id="tablo">
-            <table>
+        
+            <table id="table">
                 <tr>
                 <th>Nom</th>
                 <th>Marque</th>
                 <th>Prix</th>
                 <th>Date</th>
                 <th>Type</th>
+                <th>Promotion</th>
                 <th>Actions </th>
                 </tr>
-                <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td id="tdbutton"><button>Delet</button><button>Edit </button></td>
-                </tr>
-               
+                <tbody id="tbody"></tbody>
             </table>
+
         </section>
 </section>
 <div class="modern">
-    <button>Add</button>
-    <button>Edit</button>
+    <button id="add">Add</button>
+    <button id="edit3" >Edit</button>
+    
 </div>
 <script src="marque.js"></script>
 </body>

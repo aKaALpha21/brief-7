@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +11,8 @@ body{
 }
 header{
     background-color: rgb(255, 255, 255);
-    
+    font-family: 'Patrick Hand', cursive;
+
 }
 i{
     font-size: 200%;
@@ -67,3 +69,35 @@ td button{
     transition: 0.5s;
     letter-spacing: 0.1em;
 }
+#edit3{
+    display: none;
+}
+p{
+    color: red;
+}
+input[type=text],[type=date]{
+    width: 100%;
+}
+select{
+    width: 100%;
+}
+
+@media screen and (max-width: 700px){
+    .all{
+        display: flex;
+        flex-direction: column
+    }
+    #tablo{
+        width: 93%;
+    }
+    .modern button{
+
+        margin-left: 39%;
+        margin-top: 2%;
+    
+    }
+    .menu a i{
+        display: none;
+    }
+};
+    
